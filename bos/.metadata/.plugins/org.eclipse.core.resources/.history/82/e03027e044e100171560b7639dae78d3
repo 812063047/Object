@@ -1,0 +1,13 @@
+package com.xzq.bos.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.xzq.bos.service.IRoleService;
+@Service
+@Transactional
+public class RoleServiceImpl implements IRoleService {
+	@Autowired
+	private IRoleDao roleDao;
+}

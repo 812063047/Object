@@ -1,0 +1,12 @@
+package com.xzq.bos.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.xzq.bos.dao.INoticebillDao;
+import com.xzq.bos.dao.base.impl.BaseDaoImpl;
+import com.xzq.bos.domain.Noticebill;
+
+@Repository
+public class NoticebillDaoImpl extends BaseDaoImpl<Noticebill> implements INoticebillDao {
+
+}

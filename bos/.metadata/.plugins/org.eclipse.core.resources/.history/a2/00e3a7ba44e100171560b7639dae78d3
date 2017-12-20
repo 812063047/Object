@@ -1,0 +1,7 @@
+package com.xzq.bos.dao;
+
+import com.xzq.bos.dao.base.IBaseDao;
+
+public interface IRoleDao extends IBaseDao<Role> {
+
+}

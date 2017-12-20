@@ -1,0 +1,76 @@
+[
+    {
+        "ID": "33",
+        "text": "东直门医院",
+        "PID": "0",
+        "state": "open",
+        "children": [
+            {
+                "ID": "a35",
+                "text": "dong",
+                "PID": "33",
+                "state": "open"
+            },
+            {
+                "ID": "a36",
+                "text": "ys",
+                "PID": "33",
+                "state": "open"
+            },
+            {
+                "ID": "a37",
+                "text": "yp",
+                "PID": "33",
+                "state": "open"
+            }
+        ]
+    },
+    {
+        "ID": "34",
+        "text": "望京医院",
+        "PID": "0",
+        "state": "open"
+    },
+    {
+        "ID": "37",
+        "text": "北京中医医院",
+        "PID": "0",
+        "state": "open",
+        "children": [
+            {
+                "ID": "a9",
+                "text": "admin",
+                "PID": "37",
+                "state": "open"
+            }
+        ]
+    },
+    {
+        "ID": "39",
+        "text": "北京中医药大学",
+        "PID": "0",
+        "state": "open",
+        "children": [
+            {
+                "ID": "a1",
+                "text": "admin2",
+                "PID": "39",
+                "state": "open"
+            }
+        ]
+    },
+    {
+        "ID": "41",
+        "text": "北京中医院附属第一医院",
+        "PID": "0",
+        "state": "open",
+        "children": [
+            {
+                "ID": "a34",
+                "text": "yui",
+                "PID": "41",
+                "state": "open"
+            }
+        ]
+    }
+]

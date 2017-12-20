@@ -1,0 +1,158 @@
+	// 初始化ztree菜单
+	$(function() {
+		var setting = {
+			data : {
+				simpleData : { // 简单数据 
+					enable : true
+				}
+			},
+			callback : {
+				onClick : onClick
+			}
+		};
+		
+		// 基本功能菜单加载
+		$.ajax({
+			url : '${pageContext.request.contextPath}/json/menu.json',
+			type : 'POST',
+			dataType : 'text',
+			success : function(data) {
+				var zNodes = eval("(" + data + ")");
+				//alert(zNodes);
+				//console.log(zNodes);
+				$.fn.zTree.init($("#treeMenu"), setting, zNodes);
+			},
+			error : function(msg) {
+				alert('菜单加载异常!');
+			}
+		});
+		
+		// 系统管理菜单加载
+		$.ajax({
+			url : '${pageContext.request.contextPath}/admin.json',
+			type : 'POST',
+			dataType : 'text',
+			success : function(data) {
+				var zNodes = eval("(" + data + ")");
+				$.fn.zTree.init($("#adminMenu"), setting, zNodes);
+			},
+			error : function(msg) {
+				alert('菜单加载异常!');
+			}
+		});
+		
+		// 页面加载后 右下角 弹出窗口
+		/**************/
+		window.setTimeout(function(){
+			$.messager.show({
+				title:"消息提示",
+				msg:'欢迎登录，超级管理员！ <a href="javascript:void" onclick="top.showAbout();">联系管理员</a>',
+				timeout:5000,
+				showType:'slide'
+				
+			});
+		},3000);
+		/*************/
+		
+		$("#btnCancel").click(function(){
+			$('#editPwdWindow').window('close');
+		});
+		
+		$("#btnEp").click(function(){
+			var v=$("#editpasswordForm").form("validate");
+			if(v){
+				var v1 = $("#txtNewPass").val();
+				var v2 = $("#txtRePass").val();
+				var v3 = $("#txtOldPass").val();
+				$.post("userAction_oldPassword.action",{"password1":v3},function(data1){
+					if(data1==v3){
+						if(v1==v2){
+							$.post("userAction_editPassword.action",{"password":v1},function(data){
+								if(data == '1'){
+									//修改成功，关闭修改密码窗口
+									$("#editPwdWindow").window("close");
+									$.messager.alert("提示信息","密码修改成功！","ok");
+								}else{
+									//修改密码失败，弹出提示
+									$.messager.alert("提示信息","密码修改失败！","error");
+								}
+							});
+						}else{
+							//两次输入不一致，弹出错误提示
+							$.messager.alert("提示信息","两次密码输入不一致！","warning");
+						}
+					}else{
+						
+						$.messager.alert("提示信息","原密码不正确！","warning");
+					}
+				});
+			}
+		});
+	});
+
+	function onClick(event, treeId, treeNode, clickFlag) {
+		// 判断树菜单节点是否含有 page属性
+		if (treeNode.page!=undefined && treeNode.page!= "") {
+			var content = '<div style="width:100%;height:100%;overflow:hidden;">'
+					+ '<iframe src="'
+					+ treeNode.page
+					+ '" scrolling="auto" style="width:100%;height:100%;border:0;" ></iframe></div>';
+			if ($("#tabs").tabs('exists', treeNode.name)) {// 判断tab是否存在
+				$('#tabs').tabs('select', treeNode.name); // 切换tab
+				var tab = $('#tabs').tabs('getSelected'); 
+				$('#tabs').tabs('update', {
+				    tab: tab,
+				    options: {
+				        title: treeNode.name,
+				        content: content
+				    }
+				});
+			} else {
+				// 开启一个新的tab页面
+				$('#tabs').tabs('add', {
+					title : treeNode.name,
+					content : content,
+					closable : true
+				});
+			}
+		}
+	}
+
+	/*******顶部特效 *******/
+	/**
+	 * 更换EasyUI主题的方法
+	 * @param themeName
+	 * 主题名称
+	 */
+	changeTheme = function(themeName) {
+		var $easyuiTheme = $('#easyuiTheme');
+		var url = $easyuiTheme.attr('href');
+		var href = url.substring(0, url.indexOf('themes')) + 'themes/'
+				+ themeName + '/easyui.css';
+		$easyuiTheme.attr('href', href);
+		var $iframe = $('iframe');
+		if ($iframe.length > 0) {
+			for ( var i = 0; i < $iframe.length; i++) {
+				var ifr = $iframe[i];
+				$(ifr).contents().find('#easyuiTheme').attr('href', href);
+			}
+		}
+	};
+	// 退出登录
+	function logoutFun() {
+		$.messager
+		.confirm('系统提示','您确定要退出本次登录吗?',function(isConfirm) {
+			if (isConfirm) {
+				location.href = '${pageContext.request.contextPath }/userAction_logout.action';
+			}
+		});
+	}
+	// 修改密码
+	function editPassword() {
+		//打开修改密码窗口
+		$('#editPwdWindow').window('open');
+	}
+	// 版权信息
+	function showAbout(){
+		$.messager.alert("宅急送 v1.0","管理员邮箱: zqx@itcast.cn");
+	}

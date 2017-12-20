@@ -1,0 +1,17 @@
+package com.xzq.bos.service;
+
+import com.xzq.bos.domain.User;
+
+public interface IUserService {
+
+	public User login(User model);
+	/*–ﬁ∏ƒ√‹¬Î*/
+	public void editPassword(String id, String password);
+	
+	/**
+	 *∑÷“≥≤È—Ø
+	 * @param model
+	 */
+	public void pageQuery(User model);
+
+}

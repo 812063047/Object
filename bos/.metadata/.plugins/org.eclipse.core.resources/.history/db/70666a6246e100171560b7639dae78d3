@@ -1,0 +1,30 @@
+package com.xzq.bos.web.action;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+import com.xzq.bos.domain.Role;
+import com.xzq.bos.service.IRoleService;
+import com.xzq.bos.web.action.base.BaseAction;
+@Controller
+@Scope("prototype")
+public class RoleAction extends BaseAction<Role> {
+	@Autowired
+	private IRoleService roleService;
+	
+	private String[] functionIds;
+
+	public void setFunctionIds(String[] functionIds) {
+		this.functionIds = functionIds;
+	}
+	
+	/**
+	 *Ìí¼Ó½ÇÉ«
+	 * @return
+	 */
+	public String addRole() {
+		roleService.save(model,functionIds);
+		return LIST;
+	}
+}

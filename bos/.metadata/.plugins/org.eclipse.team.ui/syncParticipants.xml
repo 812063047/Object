@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="SVN (/bos-xzq-parent/bos-xzq-dao/pom.xml, /bos-xzq-parent/bos-xzq-dao/src, /bos-xzq-parent/bos-xzq-domain/pom.xml, /bos-xzq-parent/bos-xzq-domain/src, /bos-xzq-parent/bos-xzq-service/pom.xml, /bos-xzq-parent/bos-xzq-service/src, /bos-xzq-parent/bos-xzq-utils/pom.xml, /bos-xzq-parent/bos-xzq-utils/src, /bos-xzq-parent/bos-xzq-web/pom.xml, /bos-xzq-parent/bos-xzq-web/src)" id="org.tigris.subversion.subclipse.participant" secondary_id="1513558151556">
+<data root="false">
+<org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS org.eclipse.team.ui.SCOPE_TYPE="ResourceScope">
+<org.eclipse.team.ui.TEAMSUBSRCIBER_REFRESHSCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-dao/pom.xml"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-dao/src"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-domain/pom.xml"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-domain/src"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-service/pom.xml"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-service/src"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-utils/pom.xml"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-utils/src"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-web/pom.xml"/>
+<resource_scope_roots resource_scope_root_resource="/bos-xzq-parent/bos-xzq-web/src"/>
+</org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS>
+</data>
+</participant>
+</syncparticipants>

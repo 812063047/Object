@@ -1,0 +1,13 @@
+package com.xzq.bos.dao;
+
+import java.util.List;
+
+import com.xzq.bos.dao.base.IBaseDao;
+import com.xzq.bos.domain.Noticebill;
+import com.xzq.bos.domain.Workbill;
+
+public interface INoticebillDao extends IBaseDao<Noticebill> {
+
+	public List<Workbill> findNewWorkbills();
+
+}

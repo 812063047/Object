@@ -1,0 +1,18 @@
+package com.xzq.bos.service;
+
+import com.xzq.bos.domain.User;
+import com.xzq.bos.utils.PageBean;
+
+public interface IUserService {
+
+	public User login(User model);
+	/*ĞŞ¸ÄÃÜÂë*/
+	public void editPassword(String id, String password);
+	
+	/**
+	 *·ÖÒ³²éÑ¯
+	 * @param model
+	 */
+	public void pageQuery(PageBean pageBean);
+
+}

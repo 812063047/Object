@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.xzq.test&apos; to &apos;bos-xzq-web/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;myquart&apos;&#x0D;&#x0A;- Destination element: &apos;bos-xzq-web/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;myquart/src/main/java/com.xzq.test&apos;" description="Copy package" destination="=bos-xzq-web/src\/test\/java" element1="/src\/main\/java&lt;com.xzq.test" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1513641642095" version="1.0"/>
+</session>

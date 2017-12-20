@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=crm/src&lt;com.xzq.crm.service{ICustomerService.java[ICustomerService" modifiers="513" timestamp="1512632374401"/>
+    <typeInfo handle="=bos-xzq-service/src\/main\/java&lt;com.xzq.bos.service{IFunctionService.java[IFunctionService" modifiers="513" timestamp="1513332536067"/>
+    <typeInfo handle="=bos-xzq-dao/src\/main\/java&lt;com.xzq.bos.dao{IFunctionDao.java[IFunctionDao" modifiers="513" timestamp="1513332794810"/>
+    <typeInfo handle="=bos-xzq-web/src\/main\/java&lt;com.xzq.bos.web.action.base{BaseAction.java[BaseAction" modifiers="1" timestamp="1512559128773"/>
+    <typeInfo handle="=bos-xzq-service/src\/main\/java&lt;com.xzq.bos.service{IRoleService.java[IRoleService" modifiers="513" timestamp="1513310327776"/>
+    <typeInfo handle="=bos-xzq-dao/src\/main\/java&lt;com.xzq.bos.dao.base{IBaseDao.java[IBaseDao" modifiers="513" timestamp="1512559127363"/>
+    <typeInfo handle="=bos-xzq-dao/src\/main\/java&lt;com.xzq.bos.dao.base.impl{BaseDaoImpl.java[BaseDaoImpl" modifiers="1" timestamp="1512559127369"/>
+    <typeInfo handle="=bos-xzq-dao/src\/main\/java&lt;com.xzq.bos.dao{IRoleDao.java[IRoleDao" modifiers="513" timestamp="1513307096376"/>
+</typeInfoHistroy>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1510809101447_0" label="bos-xzq-parent" name="bos-xzq-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-utils" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-dao" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-domain" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/bos-xzq-parent" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1510809986671_1" label="Window Working Set" name="Aggregate for window 1510809986670"/>
+</workingSetManager>

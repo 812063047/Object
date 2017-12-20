@@ -1,0 +1,75 @@
+package com.xzq.bos.dao.impl;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.hibernate.criterion.DetachedCriteria;
+
+import com.xzq.bos.dao.IRoleDao;
+import com.xzq.bos.dao.base.impl.BaseDaoImpl;
+import com.xzq.bos.domain.Role;
+import com.xzq.bos.utils.PageBean;
+
+public class RoleDaoImpl extends BaseDaoImpl<Role> implements IRoleDao {
+
+	@Override
+	public void save(Role entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Role entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(Role entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void saveOrUpdate(Role entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Role findById(Serializable id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Role> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Role> findByCriteria(DetachedCriteria detachedCriteria) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void executeUpdate(String queryName, Object... objects) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void pageQuery(PageBean pageBean) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete1(Serializable id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

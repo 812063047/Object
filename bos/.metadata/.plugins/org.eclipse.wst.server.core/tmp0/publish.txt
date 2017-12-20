@@ -1,0 +1,10 @@
+#Tomcat publish data
+#Tue Dec 19 20:02:55 CST 2017
+org.eclipse.jst.jee.server\:/binary\:F\:\\bos\\crm\\WebContent\\WEB-INF\\lib\\spring-web-3.2.0.RELEASE.jar=E\:\\apache-tomcat-8.0.28\\webapps\\crm\\WEB-INF\\lib\\spring-web-3.2.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:bos-xzq-service=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web\\WEB-INF\\lib\\bos-xzq-service-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:E\:\\repository\\org\\springframework\\spring-web\\4.2.4.RELEASE\\spring-web-4.2.4.RELEASE.jar=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar
+org.eclipse.jst.jee.server\:crm=E\:\\apache-tomcat-8.0.28\\webapps\\crm
+org.eclipse.jst.j2ee.server\:bos-xzq-dao=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web\\WEB-INF\\lib\\bos-xzq-dao-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:bos-xzq-domain=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web\\WEB-INF\\lib\\bos-xzq-domain-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:bos-xzq-utils=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web\\WEB-INF\\lib\\bos-xzq-utils-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:bos-xzq-web=E\:\\apache-tomcat-8.0.28\\webapps\\bos-xzq-web

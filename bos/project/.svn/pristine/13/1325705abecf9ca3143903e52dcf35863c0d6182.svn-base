@@ -1,0 +1,52 @@
+package com.xzq.bos.service;
+
+import java.util.List;
+
+import com.xzq.bos.domain.Subarea;
+import com.xzq.bos.utils.PageBean;
+
+public interface ISubareaService {
+
+	/**分页接口
+	 * @param pageBean
+	 */
+	void pageQuery(PageBean pageBean);
+
+	/**添加分区
+	 * @param model
+	 */
+	void save(Subarea model);
+
+	/**通过ID查找定区
+	 * @param id
+	 * @return
+	 */
+	Subarea findById(String id);
+
+	/**更新地区
+	 * @param subarea
+	 */
+	void update(Subarea subarea);
+
+	/**删除地区
+	 * @param ids
+	 */
+	void deleteBatch(String ids);
+
+	/**
+	 * 分区数据导出
+	 * @return
+	 */
+	List<Subarea> findAll();
+
+	/**
+	 * 所有未关联到定区的分区，返回json数据
+	 * @return
+	 */
+	List<Subarea> findListAssociation();
+
+	List<Subarea> findListByDecidedzoneId(String decidedzoneId);
+
+	List<Object> findSubareasGroupByProvince();
+
+}

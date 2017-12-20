@@ -1,0 +1,9 @@
+package com.xzq.bos.service;
+
+import com.xzq.bos.domain.Role;
+
+public interface IRoleService {
+
+	public void save(Role model, String[] functionIds);
+
+}

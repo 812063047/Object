@@ -1,0 +1,7 @@
+package com.xzq.bos.service.impl;
+
+import com.xzq.bos.service.IFunctionService;
+
+public class FunctionServiceImpl implements IFunctionService {
+
+}

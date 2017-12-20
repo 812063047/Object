@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.xzq.crm.service.CustomerServiceImpl.JdbcTemplate&apos; in &apos;com.xzq.crm.service.CustomerServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;crm&apos;&#x0D;&#x0A;- Original element: &apos;com.xzq.crm.service.CustomerServiceImpl.JdbcTemplate&apos;&#x0D;&#x0A;- Getter method name: &apos;getJdbcTemplate&apos;&#x0D;&#x0A;- Setter method name: &apos;setJdbcTemplate&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;JdbcTemplate&apos;" flags="589830" getter="getJdbcTemplate" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.xzq.crm.service{CustomerServiceImpl.java[CustomerServiceImpl^JdbcTemplate" insertion="0" setter="setJdbcTemplate" stamp="1512196545488" version="1.0" visibility="1"/>
+</session>

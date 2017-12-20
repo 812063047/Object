@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;bos-xzq-service&apos;&#x0D;&#x0A;- Original project: &apos;bos-xzq-service&apos;&#x0D;&#x0A;- Original element: &apos;com.xzq.bos.service.IWorkbillDao.java&apos;" description="Delete element" element1="/src\/main\/java&lt;com.xzq.bos.service{IWorkbillDao.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1512786160850" subPackages="false" version="1.0"/>
+</session>

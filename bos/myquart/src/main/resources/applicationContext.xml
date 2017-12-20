@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd
+						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx.xsd
+						http://cxf.apache.org/bindings/soap 
+						http://cxf.apache.org/schemas/configuration/soap.xsd
+						http://cxf.apache.org/jaxws 
+						http://cxf.apache.org/schemas/jaxws.xsd">
+						
+	    <!-- 注册自定义作业类quartz -->
+	    <bean id="myQuartzTest" class="com.xzq.test.MyQuartzTest"></bean>
+	    
+	    <!-- 配置JobDetail -->
+	    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	         <!-- 注入目标对象 -->
+	         <property name="targetObject" ref="myQuartzTest"/>
+	         <!-- 注入目标方法 -->
+	         <property name="targetMethod" value="runQuartz"/>
+	    </bean>
+	    
+	    <!-- 配置trigger触发器 -->
+	    <bean id="myTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	         <!-- 注入任务详情对象 -->
+	         <property name="jobDetail" ref="jobDetail"/>
+	         <!-- 注入cron 表达式，通过这个表达式指定出发的时间点 -->
+	         <property name="cronExpression">
+	             <value>0/5 * * * * ?</value>
+	         </property>
+	    </bean>
+	    <!-- 配置scheduler调度工厂 -->
+	    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	         <!-- 注入我的触发器 -->
+	         <property name="triggers">
+	                <list>
+	                   <ref bean="myTrigger"/>
+	                </list>
+	         </property>
+	    </bean>
+</beans>

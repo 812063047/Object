@@ -1,0 +1,75 @@
+package com.xzq.bos.dao.impl;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.hibernate.criterion.DetachedCriteria;
+
+import com.xzq.bos.dao.IFunctionDao;
+import com.xzq.bos.dao.base.impl.BaseDaoImpl;
+import com.xzq.bos.domain.Function;
+import com.xzq.bos.utils.PageBean;
+
+public class FunctionDaoImpl extends BaseDaoImpl<T> implements IFunctionDao {
+
+	@Override
+	public void save(Function entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Function entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(Function entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void saveOrUpdate(Function entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Function findById(Serializable id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Function> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Function> findByCriteria(DetachedCriteria detachedCriteria) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void executeUpdate(String queryName, Object... objects) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void pageQuery(PageBean pageBean) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete1(Serializable id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
